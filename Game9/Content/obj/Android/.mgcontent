@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Android</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/images.jpg</File>
+    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/wall.jpg</File>
+    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/mine.png</File>
+    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/hand.png</File>
+    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/File.spritefont</File>
+    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/bullet.png</File>
+    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/block.png</File>
+  </SourceFiles>
+</SourceFileCollection>
