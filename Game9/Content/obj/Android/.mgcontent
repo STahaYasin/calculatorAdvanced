@@ -4,12 +4,16 @@
   <Platform>Android</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/images.jpg</File>
-    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/wall.jpg</File>
-    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/mine.png</File>
-    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/hand.png</File>
-    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/File.spritefont</File>
-    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/bullet.png</File>
-    <File>C:/Users/savra/Documents/Visual Studio 2017/Projects/Game9/Game9/Content/block.png</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/images.jpg</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/wall.jpg</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/mine.png</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/hand.png</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/File.spritefont</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/bullet.png</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/block.png</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/background.jpg</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/background1.png</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/tank.png</File>
+    <File>C:/Users/fatih/Desktop/Game9/calculatorAdvanced/Game9/Content/namlu.png</File>
   </SourceFiles>
 </SourceFileCollection>

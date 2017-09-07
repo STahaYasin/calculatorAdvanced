@@ -24,7 +24,7 @@ namespace Game9
         int shootCooler = 0;
         int shootTimer = 20;
 
-        private int score = 0;
+    
 
         int multiplier = 0;
         int maxMultiplier = 10;
@@ -53,6 +53,7 @@ namespace Game9
         {
             touchEvent = new TouchEventDetect();
             bullets = new List<Bullet>();
+            score = 0;
         }
 
         public void updateCanMove(bool down)
@@ -64,7 +65,7 @@ namespace Game9
         {
             score++;
         }
-
+        public int score { get; set; }
         public void Update(TouchCollection touchCollection)
         {
             updateBullets();
@@ -163,7 +164,7 @@ namespace Game9
             }
 
             if (!startFall) video.Draw(hand, new Vector2(position.X - 275, position.Y + 275 + VisibleRect.Height));
-            else video.DrawString(font, "SCORE: " + score, new Vector2(position.X - 50, 25), Color.White, 0f, new Vector2(), 7f, new SpriteEffects(), 0);
+            else video.DrawString(font, "SKOR: " + score, new Vector2(position.X - 50, 25), Color.White, 0f, new Vector2(), 7f, new SpriteEffects(), 0);
         }
     }
 }

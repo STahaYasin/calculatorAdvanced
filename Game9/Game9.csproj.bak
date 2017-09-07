@@ -19,7 +19,7 @@
     <AndroidSupportedAbis>armeabi-v7a%3bx86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions>.m4a</AndroidStoreUncompressedFileExtensions>
     <MandroidI18n />
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <MonoGamePlatform>Android</MonoGamePlatform>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
@@ -59,7 +59,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity1.cs" />
+    <Compile Include="BlockCollection\GateBlock.cs" />
+    <Compile Include="BlockFactory.cs" />
+    <Compile Include="BlockCollection\Block.cs" />
+    <Compile Include="BlockCollection\StaticBlock.cs" />
+    <Compile Include="Bullet.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="GameConf.cs" />
+    <Compile Include="GameManager\Camera.cs" />
+    <Compile Include="GameManager\ResolutionManager.cs" />
+    <Compile Include="GameManager\TochEventDetect.cs" />
+    <Compile Include="Hero.cs" />
+    <Compile Include="IUpdate.cs" />
+    <Compile Include="Level\LevelManager.cs" />
+    <Compile Include="Level\Level_01.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,6 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

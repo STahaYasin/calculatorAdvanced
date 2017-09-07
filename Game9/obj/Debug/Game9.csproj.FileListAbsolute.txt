@@ -17,4 +17,21 @@ C:\Users\savra\Documents\Visual Studio 2017\Projects\Game9\Game9\obj\Debug\uploa
 C:\Users\savra\Documents\Visual Studio 2017\Projects\Game9\Game9\bin\Android\AnyCPU\Debug\Game9.dll.mdb
 C:\Users\savra\Documents\Visual Studio 2017\Projects\Game9\Game9\obj\Debug\android\assets\Game9.dll.mdb
 C:\Users\savra\Documents\Visual Studio 2017\Projects\Game9\Game9\obj\Debug\Game9.dll.mdb
-C:\Users\savra\Documents\Visual Studio 2017\Projects\Game9\Game9\bin\Android\AnyCPU\Debug\Game9.dll.mdb
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\bin\Android\AnyCPU\Debug\Game9.dll
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\bin\Android\AnyCPU\Debug\Game9.pdb
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\bin\Android\AnyCPU\Debug\Game9.Game9.apk
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\bin\Android\AnyCPU\Debug\Game9.Game9-Signed.apk
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\bin\Android\AnyCPU\Debug\MonoGame.Framework.dll
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\bin\Android\AnyCPU\Debug\MonoGame.Framework.xml
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\Game9.csprojResolveAssemblyReference.cache
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\Game9.dll
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\Game9.pdb
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\android\bin\Game9.Game9.apk
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\res\values\strings.xml
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\res\drawable\icon.png
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\res\drawable\splash.png
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\res\values\styles.xml
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\R.cs.flag
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\uploadflags.txt
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\bin\Android\AnyCPU\Debug\Game9.dll.mdb
+C:\Users\fatih\Desktop\Game9\calculatorAdvanced\Game9\obj\Debug\android\assets\Game9.dll.mdb

@@ -19,7 +19,7 @@ namespace Game9
         {
             byteList = new List<byte[]>();
 
-            addEmptyRows(15);
+            addEmptyRows(5);
 
             for(int i = 0; i < 15; i++)
             {
@@ -40,7 +40,7 @@ namespace Game9
         {
             blockList = new List<Block[]>();
 
-            addEmptyRows(15);
+            addEmptyRows(10);
 
             for (int i = 0; i < 15; i++) //Aantal rijen die worden gemaakt tijdens het starten
             {

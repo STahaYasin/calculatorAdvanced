@@ -2,6 +2,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
+using System;
 
 namespace Game9
 {
@@ -55,7 +56,7 @@ namespace Game9
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             texture = Content.Load<Texture2D>("block");
-            wallpaper = Content.Load<Texture2D>("wall");
+            wallpaper = Content.Load<Texture2D>("background1");
             hero_texture = Content.Load<Texture2D>("mine");
             hand = Content.Load<Texture2D>("hand");
             bullet = Content.Load<Texture2D>("bullet");
@@ -102,11 +103,13 @@ namespace Game9
 
                     if (row[i].CollitionRect().Intersects(hero.CollitionRect()))
                     {
-                        if (x > 3 && row[i] is GateBlock) countSpace++;
+                        if (x > 3 && row[i] is GateBlock ) countSpace++;
                         if (row[i] is StaticBlock) countBlock++;
                         if(row[i] is GateBlock && rowHit < x)
                         {
                             hero.Score();
+                            if (hero.score < 6) 
+                                    level.addRow();
                         }
                         rowHit = x;
                     }
@@ -118,8 +121,11 @@ namespace Game9
                 }
             }
 
-            if (countSpace > 0) level.addRow();
+           // if (countSpace > 0 )
+              //cok fazla eklenti yapiyo 
             if (countBlock > 0) die();
+
+            Console.Write(countSpace);
 
             //hero.updateCanMove(countBlock == 0);
         }
@@ -133,7 +139,7 @@ namespace Game9
             
             spriteBatch.Begin();
 
-            spriteBatch.Draw(wallpaper, new Vector2(0, 0), new Rectangle(0, 0, 1080, 1920), Color.White);
+            spriteBatch.Draw(wallpaper, new Rectangle(0, 0,1080,1920), new Rectangle(0, 0, scaleNumber(1200), scaleNumber(1920)), Color.White);
 
             spriteBatch.End();
 
@@ -146,6 +152,11 @@ namespace Game9
             base.Draw(gameTime);
 
             spriteBatch.End();
+        }
+        public int scaleNumber(int value)
+        {
+            double output = value * resolutionManager.Scale;
+            return Convert.ToInt32(output);
         }
         private void die()
         {
