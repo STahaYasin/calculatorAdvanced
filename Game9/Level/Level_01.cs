@@ -84,9 +84,9 @@ namespace Game9
             blockList.Add(newArr);
             addEmptyRows(4);
         }
-        private void addEmptyRows(int amaunt)
+        public override void addEmptyRows(int amount)
         {
-            for(int i = 0; i < amaunt; i++)
+            for(int i = 0; i < amount; i++)
             {
                 //byteList.Add(new byte[heightCount]);
                 blockList.Add(new Block[heightCount]);

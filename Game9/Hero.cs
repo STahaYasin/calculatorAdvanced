@@ -54,6 +54,7 @@ namespace Game9
             touchEvent = new TouchEventDetect();
             bullets = new List<Bullet>();
             score = 0;
+            speed = 0;
         }
 
         public void updateCanMove(bool down)
@@ -135,9 +136,10 @@ namespace Game9
                 }
             }
 
-            position.X += 5; //And dont move until start
+            position.X += speed; //And dont move until start
             updateCollition();
         }
+        public int speed { get; set; }
         private void updateBullets()
         {
             foreach(var bullet in bullets)

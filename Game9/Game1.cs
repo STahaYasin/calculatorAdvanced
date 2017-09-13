@@ -12,7 +12,7 @@ namespace Game9
         SpriteBatch spriteBatch;
         ResolutionManager resolutionManager;
         Camera camera;
-
+        Enemy enemy;
 
         int blockSize = 128;
 
@@ -21,11 +21,7 @@ namespace Game9
         int drawTimer = 15;
         int drawCooler = 0;
 
-        Texture2D texture;
-        Texture2D wallpaper;
-        Texture2D hero_texture;
-        Texture2D hand;
-        Texture2D bullet;
+        Texture2D texture,wallpaper, hero_texture, hand,bullet,namlu, tank,bulletL;
         SpriteFont font;
 
         Hero hero;
@@ -46,7 +42,7 @@ namespace Game9
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            //TODO: Add your initialization logic here
             camera = new Camera(GraphicsDevice.Viewport);
             base.Initialize();
         }
@@ -60,7 +56,12 @@ namespace Game9
             hero_texture = Content.Load<Texture2D>("mine");
             hand = Content.Load<Texture2D>("hand");
             bullet = Content.Load<Texture2D>("bullet");
+
+            bulletL  = Content.Load<Texture2D>("bulletL");
             font = Content.Load<SpriteFont>("File");
+            namlu = Content.Load<Texture2D>("namlu");
+            tank = Content.Load<Texture2D>("tank");
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -81,9 +82,14 @@ namespace Game9
             base.Update(gameTime);
 
             checkCollition();
+            if (enemy != null) enemy.Update(hero,gameTime);
 
             if (drawCooler > 0) drawCooler--;
             if (drawCooler < 0) drawCooler = 0;
+          
+            if (enemy == null) enemy = new Enemy(new Vector2(800, 1800), new Rectangle(0, 0, 542, 208),namlu,tank,bulletL);
+               
+            
         }
         private void checkCollition()
         {
@@ -108,8 +114,8 @@ namespace Game9
                         if(row[i] is GateBlock && rowHit < x)
                         {
                             hero.Score();
-                            if (hero.score < 6) 
-                                    level.addRow();
+                            level.addRow();
+                          
                         }
                         rowHit = x;
                     }
@@ -120,6 +126,7 @@ namespace Game9
                     countBlock++;
                 }
             }
+           
 
            // if (countSpace > 0 )
               //cok fazla eklenti yapiyo 
@@ -136,9 +143,9 @@ namespace Game9
 
             if (drawCooler != 0) return;
             if (texture == null) return;
-            
+           
             spriteBatch.Begin();
-
+           
             spriteBatch.Draw(wallpaper, new Rectangle(0, 0,1080,1920), new Rectangle(0, 0, scaleNumber(1200), scaleNumber(1920)), Color.White);
 
             spriteBatch.End();
@@ -149,6 +156,7 @@ namespace Game9
             
             level.Draw(spriteBatch, texture, wallpaper);
             hero.Draw(spriteBatch, hero_texture, hand, font, bullet);
+            if (enemy != null)    enemy.Draw(spriteBatch);
             base.Draw(gameTime);
 
             spriteBatch.End();
@@ -160,7 +168,7 @@ namespace Game9
         }
         private void die()
         {
-            reset();
+           reset();
         }
         private void reset()
         {
@@ -170,7 +178,7 @@ namespace Game9
         }
         private void makeHeroAndLevel()
         {
-            hero = new Hero(new Vector2(450, 1920 / 2), new Rectangle(0, 0, blockSize, blockSize));
+            hero = new Hero(new Vector2(200, 1920 / 2), new Rectangle(0, 0, blockSize, blockSize));
             level = new Level_01();
         }
     }

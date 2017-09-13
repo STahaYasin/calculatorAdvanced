@@ -59,6 +59,7 @@ namespace Game9
             }
         }
         public abstract void addRow();
+        public abstract void addEmptyRows(int amount);
         public virtual void Draw(SpriteBatch video, Texture2D texture, Texture2D wallpaper)
         {
             
